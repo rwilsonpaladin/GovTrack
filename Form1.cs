@@ -331,8 +331,8 @@ namespace GovForms
             }
             if (flgRepChecked == true)
             { // Go to BillHeader screen
-                BillHeaderData BillHeader = new BillHeaderData(this);
-                BillHeader.ShowDialog();
+                BillData BillData = new BillData(this);
+                BillData.ShowDialog();
             }
             else
             {
@@ -408,24 +408,6 @@ namespace GovForms
             // listView1_ItemCheck1
         }
 
-/*
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            int iCount = listView1.Items.Count;
-            if (SelectAllCheckBox.Checked == true)
-            {
- // raw               
-                int i = 0;
-                foreach (ListViewItem item in listView1.Items)
-                {
-                    if (item.Checked == false)
-                        SelectAllCheckBox.Checked = false;
-                 //       REPIDListBox.SetItemCheckState(i, CheckState.Unchecked);
-                    i = i + 1;
-                }
-            }
-        }
-*/
         private void radioSenate_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSenate.Checked)
