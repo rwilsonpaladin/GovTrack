@@ -447,7 +447,7 @@ public class JFrameResults extends JFrame implements Serializable {
     {
         Class.forName("com.mysql.jdbc.Driver");
          conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/federal",
-        		 "root", "tesa411");
+        		 "root", "#######");
     } 
     catch (ClassNotFoundException e) {
         e.printStackTrace();
@@ -569,7 +569,7 @@ public class JFrameResults extends JFrame implements Serializable {
         {
             conn1 =
            DriverManager.getConnection("jdbc:mysql://localhost/" +
-                   "federal?" + "user=root&password=tesa411");
+                   "federal?" + "user=root&password=#######");
         } catch (SQLException ex) 
         {
             System.out.println("SQLException: " + ex.getMessage());
